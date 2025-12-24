@@ -1,0 +1,30 @@
+# Minimal values for Python application Helm chart
+
+replicaCount: 1
+
+image:
+  repository: python
+  tag: "3.11"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+serviceAccount:
+  create: true
+  automount: true
+
+autoscaling:
+  enabled: false
+
+podSecurityContext: {}
+securityContext: {}
