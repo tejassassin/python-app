@@ -1,6 +1,6 @@
 # Values for kind-kind environment
 
-replicaCount: 1
+replicaCount: 2
 
 image:
   repository: python
@@ -28,4 +28,3 @@ autoscaling:
 
 podSecurityContext: {}
 securityContext: {}
-
