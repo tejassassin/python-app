@@ -1,6 +1,6 @@
 # Values for kind-kind environment
 
-replicaCount: 4
+replicaCount: 2
 
 image:
   repository: python
